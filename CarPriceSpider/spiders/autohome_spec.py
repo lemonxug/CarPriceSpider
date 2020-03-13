@@ -3,7 +3,7 @@ import scrapy
 import json
 import time
 
-class AutohomeSpider(scrapy.Spider):
+class AutohomeSpecSpider(scrapy.Spider):
     name = 'autohome_spec'
     allowed_domains = ['autohome.com', 'dealer.autohome.com.cn']
     def start_requests(self):
@@ -39,8 +39,8 @@ class AutohomeSpider(scrapy.Spider):
         dealerseries = json.loads(response.text)
         for s in dealerseries['result'][0]['seriesInfoList']:
             # https://dealer.autohome.com.cn/handler/other/getdata?__action=dealerlq.getdealerspeclist&dealerId=121722&seriesId=2886
-            next_page = 'https://dealer.autohome.com.cn/handler/other/\
-            getdata?__action=dealerlq.getdealerspeclist&dealerId={}&seriesId={}'.format(dlrid, str(s['seriesId']))
+            next_page = 'https://dealer.autohome.com.cn/handler/other/' \
+                        'getdata?__action=dealerlq.getdealerspeclist&dealerId={}&seriesId={}'.format(dlrid, str(s['seriesId']))
             request = scrapy.Request(next_page, callback=self.parse_spec,
                                       cb_kwargs=dict(dlrid=dlrid, seriesId=s['seriesId'], brandid=s['brandId']))
             yield request

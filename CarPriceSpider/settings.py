@@ -79,7 +79,7 @@ MYSQL_CHARSET = 'utf8'
 ITEM_PIPELINES = {
     # 'scrapy_mysql_pipeline.MySQLPipeline': 300,
    'CarPriceSpider.pipelines.CarpricespiderPipeline': 320,
-    'CarPriceSpider.pipelines.ScreenshotPipeline':300,
+    # 'CarPriceSpider.pipelines.ScreenshotPipeline':300,
     'CarPriceSpider.pipelines.DuplicatesPipeline': 301,
 
 }

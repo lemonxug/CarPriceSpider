@@ -3,7 +3,7 @@ import scrapy
 import time
 from scrapy import Selector
 
-class XcarSpider(scrapy.Spider):
+class PcautoBrandSpider(scrapy.Spider):
     name = 'pcauto_brand'
     allowed_domains = ['pcauto.com.cn']
     start_urls = ['https://price.pcauto.com.cn/index/js/6_0/treedata-dn-html.js']

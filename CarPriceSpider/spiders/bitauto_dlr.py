@@ -4,7 +4,7 @@ import json
 import time
 import math
 
-class AutohomeSpider(scrapy.Spider):
+class BiautoDlrSpider(scrapy.Spider):
     name = 'bitauto_dlr'
     allowed_domains = ['bitauto.com', 'dealer.bitauto.com']
     start_urls = ['https://dealer.bitauto.com/nanjing/kia/?BizModes=0']

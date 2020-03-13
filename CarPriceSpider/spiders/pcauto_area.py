@@ -4,7 +4,7 @@ import time
 import json
 from scrapy import Selector
 
-class XcarSpider(scrapy.Spider):
+class PcautoAreaSpider(scrapy.Spider):
     name = 'pcauto_area'
     allowed_domains = ['pcauto.com.cn']
     start_urls = ['https://www.pcauto.com.cn/global/1603/intf8771.js']

@@ -4,7 +4,7 @@ import json
 import time
 
 
-class AutohomeSpider(scrapy.Spider):
+class BiautoAreaSpider(scrapy.Spider):
     name = 'bitauto_area'
     allowed_domains = ['bitauto.com']
     start_urls = ['https://cmsapi.bitauto.com/city/getcity.ashx?callback=City_Select._$JSON_callback.$JSON&requesttype=json&bizCity=1']

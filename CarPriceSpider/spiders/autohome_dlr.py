@@ -4,7 +4,7 @@ import json
 import time
 # from CarPriceSpider.items import AutohomeDealerItem
 
-class AutohomeSpider(scrapy.Spider):
+class AutohomeDlrSpider(scrapy.Spider):
     name = 'autohome_dlr'
     allowed_domains = ['autohome.com', 'dealer.autohome.com.cn']
 

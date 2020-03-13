@@ -4,7 +4,7 @@ import json
 import time
 
 
-class AutohomeSpider(scrapy.Spider):
+class AutohomeBrandSpider(scrapy.Spider):
     name = 'autohome_brand'
     allowed_domains = ['autohome.com', 'car.autohome.com.cn']
     start_urls = ['https://car.autohome.com.cn/AsLeftMenu/As_LeftListNew.ashx?typeId=1']

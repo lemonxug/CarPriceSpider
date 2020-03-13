@@ -3,7 +3,7 @@ import scrapy
 import time
 import json
 
-class XcarSpider(scrapy.Spider):
+class PcautoSpecPriceSpider(scrapy.Spider):
     name = 'pcauto_specprice'
     allowed_domains = ['pcauto.com.cn']
     start_urls = ['https://price.pcauto.com.cn/shangjia/c2/nb12/']

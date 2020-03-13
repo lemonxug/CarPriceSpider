@@ -3,7 +3,7 @@ import scrapy
 import json
 import time
 
-class AutohomeSpider(scrapy.Spider):
+class AutohomeSeriesSpider(scrapy.Spider):
     name = 'autohome_series'
     allowed_domains = ['autohome.com', 'dealer.autohome.com.cn']
 

@@ -2,7 +2,7 @@
 import scrapy
 import time
 
-class XcarSpider(scrapy.Spider):
+class XcarBrandSpider(scrapy.Spider):
     name = 'xcar_brand'
     allowed_domains = ['xcar.com.cn']
     start_urls = ['http://dealer.xcar.com.cn/']

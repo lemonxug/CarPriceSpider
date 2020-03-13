@@ -4,7 +4,7 @@ import json
 import time
 
 
-class AutohomeSpider(scrapy.Spider):
+class AutohomeAreaSpider(scrapy.Spider):
     name = 'autohome_area'
     allowed_domains = ['autohome.com']
     start_urls = ['https://www.autohome.com.cn/yancheng/#pvareaid=2113623'] # 查询起亚各地区经销商数量

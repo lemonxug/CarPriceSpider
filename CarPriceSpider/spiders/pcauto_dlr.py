@@ -2,7 +2,7 @@
 import scrapy
 import time
 
-class XcarSpider(scrapy.Spider):
+class PcautoDlrSpider(scrapy.Spider):
     name = 'pcauto_dlr'
     allowed_domains = ['pcauto.com.cn']
     start_urls = ['https://price.pcauto.com.cn/shangjia/c2/nb12/']
